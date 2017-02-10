@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Order Smartphone form</title>
+</head>
+    
+<body>
+<form method="post" action="Desktop/Introduction to Web Programming/COMP1060/Week 1/lab1.php">
+    <h1>Order a New Smartphone</h1>
+  <!--  Place Account information here -->
+    <fieldset>
+        <h2 class="account">Account information</h2>
+        
+        <p class="row">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="first_name" class="large" placeholder="Enter your first name" autofocus required>
+        </p>
+        <p class="row">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="last_name" class="large" placeholder="Enter your last name" required>
+        </p>
+        <p class="row">
+            <label for="email">Email Address</label>
+            <input type="email" id=email class="large" >
+        </p>
+    </fieldset>
+    
+    <!-- Smartphone model-->
+    <fieldset>
+        <h2>Smartphone model:</h2>
+        <p class="row">
+            <label for="iphone"><strong>Iphone 8 plus</strong></label>
+            <input type="checkbox" id="iphone" value="iphone" name="iphone" checked>
+        </p>
+        <p class="row">
+            <label for="blackberry"><strong>Blackberry DTEK100</strong></label>
+            <input type="checkbox" id="blackberry" value="blackberry" name="blackberry" >
+        </p>
+        <p class="row">
+            <label for="sony"><strong>Sony Experia Z11</strong></label>
+            <input type="checkbox" id="sony" value="sony" name="sony" >
+        </p>
+        <p class="row">
+            <label for="samsung"><strong>Samsung Galaxy 10</strong></label>
+            <input type="checkbox" id="samsung" value="samsung" name="samsung" >
+        </p>
+        <p class="row">
+            <label for="hua"><strong>HuaWei P99</strong></label>
+            <input type="checkbox" id="hua" value="hua" name="hua" >
+        </p>
+    </fieldset>
+    
+    <!-- Quantity -->
+    <fieldset>
+        <h2 class="quantity">Quantity</h2>
+        
+        <p class="row">
+            <input type="text" placeholder="smartphones ordered" required>
+        </p>
+    </fieldset>
+    
+    <!-- Delivery Date -->
+    <fieldset>
+        <h2 class="date">Delivery Date</h2>
+        
+        <p class="row">
+            <input type="date" autocomplete="on">
+        </p>
+    </fieldset>
+    
+    <!-- Address field here -->
+    <fieldset>
+        <h2 class="address">Delivery Address</h2>
+        
+        <p class="row">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="address" class="large" required >
+        </p>
+        <p class="row">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" class="large">
+        </p>
+        <p class="row">
+           <label for="state">State:</label>
+					<select id="state" name="state">
+                       <optgroup label="Canada">
+						     <option value="VA">Vancouver</option>
+						     <option value="SA">Saskatoon</option>
+						     <option value="CA">Calgary</option>
+                             <option value="ED">Edmonton</option>
+                        </optgroup>
+                        <optgroup label="United States">
+                            <option value="NY" selected>New York</option>
+                            <option value="CHI">Chicago</option>
+                            <option value="MIN">Minnesota</option>
+                        </optgroup>
+					</select>
+        </p>
+        <p class="row">
+            <label for="postal">Postal Code</label>
+            <input type="text" id="postal" name="postal" class="large">
+        </p>
+    </fieldset> 
+    
+    <!-- Comments and feedback -->
+    <fieldset>
+        <h2 class="comments">How was your shopping experience with us?</h2>
+        
+        <p class="row">
+            <label for="like">Loved it!!</label>
+            <input type="radio" id="like" name="like" value="like" checked>
+        </p>
+        <p class="row">
+            <label for="say">Prefer not to say</label>
+            <input type="radio" id="say" name="say" value="say" >
+        </p>
+        <p class="row">
+            <label for="comm">Other Comments</label>
+            <textarea id="comm" cols="40" rows="10" title="Other comments" ></textarea>
+            
+        </p>
+    </fieldset>
+    
+    <!-- submit -->
+    <input type="submit" value="Purchase">
+
+</form>
+</body>
+
+</html>

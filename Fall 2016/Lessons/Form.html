@@ -1,0 +1,107 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Create your account</title>
+</head>
+    
+<body>
+<form method="post" action="server_file.php">
+<h1>Create a New Account</h1>
+  <!--  Place Account information here -->
+    <fieldset>
+        <h2 class="account">Account information</h2>
+        
+        <p class="row">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="first_name" class="large" placeholder="Enter your first name" autofocus required>
+        </p>
+        <p class="row">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="last_name" class="large" placeholder="Enter your last name">
+        </p>
+        <p class="row">
+            <label for="email">Email Address</label>
+            <input type="email" id=email class="large" >
+        </p>
+        <p class="row">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" maxlength="7">
+        </p>
+        <p class="row">
+            <label for="password2">Re-enter Password</label>
+            <input type="password" id="password2" name="password2" maxlength="7">
+        </p>
+    </fieldset>
+ <!-- Address field here -->
+    <fieldset>
+        <h2 class="address">Address</h2>
+        
+        <p class="row">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="address" class="large" required >
+        </p>
+        <p class="row">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" class="large">
+        </p>
+        <p class="row">
+            <label for="province">Province</label>
+            <input type="text" id="province" name="province" class="large">
+        </p>
+        <p class="row">
+            <label for="postal">Postal Code</label>
+            <input type="text" id="postal" name="postal" class="large">
+        </p>
+    </fieldset>
+ <!-- Put Public Profile here -->  
+    <fieldset>
+        <h2 class="profile">Public Profile</h2>
+        
+        <p class="row">
+                <label for="picture">Picture:Upload Photo</label>
+                <input type="file" id="picture" name="picture" multiple />
+       <fieldset>
+          <legend>Gender:</legend>
+            <p class="row">
+                <input type="radio" id="male" name="male" value="female" />
+                <label for="male">Male</label>
+            </p>
+            <p class="row">
+                <input type="radio" id="female" name="female" value="female" />
+                <label for="female">Female</label>
+            </p>
+            <p class="row">
+                <input type="radio" id="decline" name="decline" value="decline" />
+                <label for="decline">Decline to Answer</label>
+            </p>
+        </fieldset>
+    </fieldset>
+ <!-- Email preferences -->
+    <fieldset>
+        <h2 class="email preferences">Email Preferences</h2>
+        <p class="row">
+            <input type="checkbox" id="news" name="news" value="news" checked>
+            <label for="news">Member news</label>
+        </p>
+        <p class="row">
+            <input type="checkbox" id="warning" name="warning" value="warning">
+            <label for="warning">Warning bulletins</label>
+        </p>
+        <p class="row">
+            <input type="checkbox" id="question" name="question" value="question">
+            <label for="question">Member Questions</label>
+        </p>
+        <p class="row">
+            <input type="checkbox" id="classified" name="classified" value="classified">
+            <label for="classified">Member Classifieds</label>
+        </p>
+    </fieldset>
+  <!-- Submit button -->    
+    <fieldset>
+         <input type="submit" value="Create Account">
+    </fieldset>
+</form>
+
+</body>
+</html>

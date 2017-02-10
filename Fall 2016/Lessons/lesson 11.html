@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 11</title>
+</head>
+<body>
+    <script>
+        var password;
+        var enter = prompt("Enter your username: ");
+        var flashStep = 1;
+
+        function flash() {
+        if(flashStep==1) {
+          color= "red";
+         flashStep=2; 
+          }
+            else {
+          color= "blue";
+          flashStep=1;
+         }
+            document.body.style.backgroundColor = color;
+          }
+        
+
+        if(enter == 'me'){
+            var password = "whatsup";
+            pass = prompt("Enter password: ");
+            if(pass == password){
+            document.write('Well done');
+            window.setInterval(flash,2000);
+            }
+         else{
+            alert('Invalid login')
+        }
+        }
+        else{
+            alert('Invalid login')
+        }
+    </script>
+</body>
+</html>
